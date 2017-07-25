@@ -7,7 +7,7 @@
     
 
     <title>
-      git的基本操作命令 | My blog 
+      requests库用法 | My blog 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,16 +16,16 @@
     
     
 
-    <meta name="description" content="mkdir gitLearn–创建目录 cd gitLearn  –进入路径 pwd–显示当前目录 git init–把这个目录变成git可以管理的仓库之后当前目录下就会多一个.git的目录（追踪管理版本库）新建一个 文本文件 git add xxx.txt把文件添加到仓库,再用git commit把文件 提交到仓库后面可以加-m加提交的说明方便从历史记录查到改动记录ps:可以add（把文件添加到">
+    <meta name="description" content="requests.request(method,url,**kwargs) 构造一个请求，支撑之后的各方法的基础方法 method:请求方式，对应get/put/post等：http协议中的 url:拟获取页面的url链接 **kwargs:控制访问的参数,均可 params ：能够增加到url中的参数 data ：向url链接中提供数据 json ：向服务器提交json格式数据 headers">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git的基本操作命令 | My blog">
-<meta property="og:url" content="http://yoursite.com/2017/07/19/git的基本操作/index.html">
+<meta property="og:title" content="requests库用法 | My blog">
+<meta property="og:url" content="http://yoursite.com/2017/07/25/requests库用法/index.html">
 <meta property="og:site_name" content="My blog">
-<meta property="og:description" content="mkdir gitLearn–创建目录 cd gitLearn  –进入路径 pwd–显示当前目录 git init–把这个目录变成git可以管理的仓库之后当前目录下就会多一个.git的目录（追踪管理版本库）新建一个 文本文件 git add xxx.txt把文件添加到仓库,再用git commit把文件 提交到仓库后面可以加-m加提交的说明方便从历史记录查到改动记录ps:可以add（把文件添加到">
-<meta property="og:updated_time" content="2017-07-25T01:30:11.575Z">
+<meta property="og:description" content="requests.request(method,url,**kwargs) 构造一个请求，支撑之后的各方法的基础方法 method:请求方式，对应get/put/post等：http协议中的 url:拟获取页面的url链接 **kwargs:控制访问的参数,均可 params ：能够增加到url中的参数 data ：向url链接中提供数据 json ：向服务器提交json格式数据 headers">
+<meta property="og:updated_time" content="2017-07-25T01:29:46.064Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git的基本操作命令 | My blog">
-<meta name="twitter:description" content="mkdir gitLearn–创建目录 cd gitLearn  –进入路径 pwd–显示当前目录 git init–把这个目录变成git可以管理的仓库之后当前目录下就会多一个.git的目录（追踪管理版本库）新建一个 文本文件 git add xxx.txt把文件添加到仓库,再用git commit把文件 提交到仓库后面可以加-m加提交的说明方便从历史记录查到改动记录ps:可以add（把文件添加到">
+<meta name="twitter:title" content="requests库用法 | My blog">
+<meta name="twitter:description" content="requests.request(method,url,**kwargs) 构造一个请求，支撑之后的各方法的基础方法 method:请求方式，对应get/put/post等：http协议中的 url:拟获取页面的url链接 **kwargs:控制访问的参数,均可 params ：能够增加到url中的参数 data ：向url链接中提供数据 json ：向服务器提交json格式数据 headers">
     
     
     
@@ -149,12 +149,12 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">git的基本操作命令</h1>
+    <h1 class="post-title">requests库用法</h1>
 
     
 
     <div class="post-meta">
-      <time datetime="2017-07-19" class="post-meta__date date">2017-07-19</time> 
+      <time datetime="2017-07-25" class="post-meta__date date">2017-07-25</time> 
 
       <span class="post-meta__tags tags">
 
@@ -170,24 +170,39 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <p><li>mkdir gitLearn–创建目录<br> </li><li>cd gitLearn  –进入路径</li></p>
-<p><li>pwd–显示当前目录</li></p>
-<p><li>git init–把这个目录变成git可以管理的仓库<br>之后当前目录下就会多一个.git的目录（追踪管理版本库）<br>新建一个 文本文件</li></p>
-<p><li>git add xxx.txt把文件添加到仓库,再用git commit把文件 提交到仓库后面可以加-m加提交的说明方便从历史记录查到改动记录<br>ps:可以add（把文件添加到暂存区）很多不同文件再用commit（把暂存区内容提交到当前分支）一起提交</li></p>
-<p><li>git ststus命令可以掌握仓库当前状态，文件是否被修改过</li></p>
-<p><li>git diff可以查看 不同，改动内容</li></p>
-<p><li>git log命令显示最近到最远的提交日志</li></p>
-<p><li>git reset 命令回退上一个版本</li></p>
-<p><li>git reflog 用来记录每一次命令</li></p>
-<p><li>git checkout – <file>用版本库里的版本替换工作区 的版本，无论工作区是修改还是删除，都可以还原</file></li></p>
-<p><li>git reset HEAD file可以把暂存区的修改撤销掉重新放回工作区</li></p>
-<p><li>git rm删除一个文件</li></p>
-<p><li>git remote sdd origin git@server-name:path/repo-name.git可以关联一个远程库;<br>关联后git push -u origin master 第一次推送master分支的所有内容<br>每次本地提交后，可以使用命令git push origin master推送最新修改</li></p>
-<p><li>git checkout -b表示创建并切换分支</li></p>
-<p><li>git branch查看当前分支</li></p>
-<p><li>git merge用于合并指定分支到当前分支</li></p>
-<p><li>git branch -d<name>删除分支</name></li></p>
-<p><li>git log –graph可以看到分支合并图</li></p>
+    <p></p><h3>requests.request(method,url,**kwargs)</h3><p></p>
+<p><li>构造一个请求，支撑之后的各方法的基础方法</li></p>
+<p><li>method:请求方式，对应get/put/post等：http协议中的</li></p>
+<p><li>url:拟获取页面的url链接</li></p>
+<p><li>**kwargs:控制访问的参数,均可</li></p>
+<p><li>params ：能够增加到url中的参数</li></p>
+<p><li>data ：向url链接中提供数据</li></p>
+<p><li>json ：向服务器提交json格式数据</li></p>
+<p><li>headers ；字典，定制http头</li></p>
+<p><li>cookies ，auth ，files， timeout ，proxies ，allow_redirects， stream ，verify， cert</li></p>
+<p></p><h3>requests.get(url,params=None,**kwargs)</h3><br>获取html网页的主要方法<p></p>
+<p><li>r=requests.get(url)构造一个向服务器请求资源的request对象，返回r是包含服务器资源的response对象</li></p>
+<p><li>url:获取页面的url链接</li></p>
+<p><li>params:url中的额外参数，字典或字节流格式，可选</li></p>
+<p><li>**kwargs:12个控制访问的参数</li></p>
+<p></p><h3>requests.head(url,**kwargs)</h3><p></p>
+<p><li>获取html网页头信息的方法</li></p>
+<p><li>可以用很少的网络流量获取网页的概要信息</li></p>
+<p></p><h3>requests.post(url,data=None,json=None,**kwargs)</h3><p></p>
+<p><li>向html网页提交post请求的方法</li></p>
+<p><li>url:拟更新页面的url链接</li></p>
+<p><li>向服务器提交新增数据</li></p>
+<p><li>服务器会根据用户提交内容的不同，做不同的整理比如：键值对默认存储表单形式，字符串在data形式</li></p>
+<p></p><h3>requests.put(url,data=None,**kwargs)</h3><p></p>
+<p><li>向html网页提交put请求的方法</li></p>
+<p><li>url:拟更新页面的url链接</li></p>
+<p><li>put方法与post方法相似，不过put方法会覆盖原有数据</li></p>
+<p></p><h3>requests.patch(url,data=None,*kwargs)</h3><p></p>
+<p><li>向html网页提交局部修改请求</li></p>
+<p><li>url:拟更新页面的url链接</li></p>
+<p></p><h3>requests.delete(url,**kwargs)</h3><p></p>
+<p><li>向html网页提交删除请求</li></p>
+<p><li>url:拟删除页面的url链接</li></p>
 
   </section>
 
